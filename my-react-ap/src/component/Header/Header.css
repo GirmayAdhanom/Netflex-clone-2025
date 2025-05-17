@@ -1,0 +1,91 @@
+.Header_Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #111;
+    height: 70px;
+    color: white;
+    transition: background-color 0.4s ease-in-out;
+    z-index: 999;
+  }
+  
+  .Header_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+  .Left_side {
+    display: flex;
+    align-items: center;
+    gap: 0px; /* remove spacing between logo and nav */
+  }
+  
+  .Header_Logo {
+    width: 100px;
+    margin-right: 10px; /* optional: slight breathing room if needed */
+  }
+  
+  .Header_links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .Header_links li {
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .Header_links li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .Right_side {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .Header_Icons {
+    cursor: pointer;
+  }
+  
+  .Mobile-Menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .Mobile-Menu {
+      display: block;
+    }
+  
+    .mobile-menu-open {
+      display: flex;
+      /* flex-direction: column; */
+      background-color: #000;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      padding: 1rem;
+      z-index: 1000;
+    }
+  
+    .Header_links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  

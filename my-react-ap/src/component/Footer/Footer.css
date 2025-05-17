@@ -1,0 +1,73 @@
+.Footer_outer_container{
+    width: 70%;
+    margin: 0 auto;
+    color: gray;
+    padding-top: 40px;
+    background-color: #111;
+    align-items: center;
+    justify-content: center;  
+}
+.Footer_icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+
+}
+.Footer_data{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.Footer_link{
+    list-style: none;
+}
+.Footer_link li:hover{
+    text-decoration: underline;
+}
+.Footer_link li{
+    padding-top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.Servoce_Code{
+    padding-top: 40px;
+    cursor: pointer;
+}
+.Copy_Right{
+    padding-top: 20px;
+    align-items: center;
+}
+.Footer_link li a {
+text-decoration: none;
+color: #fff;
+
+}
+
+@media (max-width: 768px){
+    .Footer-data > div {
+        width: calc (50% -20px);
+    }
+}
+@media (max-width: 600px){
+    .Footer_data {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Footer_data > div {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .Footer_Icons svg {
+        font-size: 1.8rem;
+        margin-right: 15px;
+    }
+    .Service_Code{
+        width: 80%;
+        margin: 15px 0;
+    }
+    .Copy_right{
+        text-align: center;
+    }
+}
