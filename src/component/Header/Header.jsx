@@ -43,34 +43,31 @@ function Header() {
   return (
     <div className={`header-outer-container ${isScrolled ? 'scroll' : ''}`}>
       <div className="Header_Container">
-        <div className="Header_wrapper">
-        <img className="Header_Logo" src={netflix} alt="Netflix Logo" />
-
+        <div className="Left_side">
+          <img className="Header_Logo" src={netflix} alt="Netflix Logo" />
           {(!isMobile || showMobileMenu) && (
-  <div className="Left_side">
-    <ul className={`Header_links ${showMobileMenu && isMobile ? 'mobile-menu-open' : ''}`}>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">TV Show</a></li>
-      <li><a href="#">Movie</a></li>
-      <li><a href="#">New & Popular</a></li>
-      <li><a href="#">My Lists</a></li>
-      <li><a href="#">Browse by Language</a></li>
-    </ul>
-  </div>
-)}
+            <ul className={`Header_links ${showMobileMenu && isMobile ? 'mobile-menu-open' : ''}`}>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">TV Show</a></li>
+              <li><a href="#">Movie</a></li>
+              <li><a href="#">New & Popular</a></li>
+              <li><a href="#">My Lists</a></li>
+              <li><a href="#">Browse by Language</a></li>
+            </ul>
+          )}
+        </div>
 
-          <div className="Right_side">
-            <div className="Header_Icons"><SearchIcon /></div>
-            <div className="Header_Icons"><CircleNotificationsIcon /></div>
-            <div className="Header_Icons"><AccountBoxIcon /></div>
-            <div className="Header_Icons"><ArrowDropDownIcon /></div>
+        <div className="Right_side">
+          <div className="Header_Icons"><SearchIcon /></div>
+          <div className="Header_Icons"><CircleNotificationsIcon /></div>
+          <div className="Header_Icons"><AccountBoxIcon /></div>
+          <div className="Header_Icons"><ArrowDropDownIcon /></div>
 
-            {isMobile && (
-              <div className="Mobile-Menu" onClick={toggleMobileMenu}>
-                <MenuIcon />
-              </div>
-            )}
-          </div>
+          {isMobile && (
+            <div className="Mobile-Menu" onClick={toggleMobileMenu}>
+              <MenuIcon />
+            </div>
+          )}
         </div>
       </div>
     </div>
